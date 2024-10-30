@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Creator</title>
+        <link rel = "stylesheet" href = "../../css/quizCreator.css">
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Creator Mode</h1>
+        <div class="form-field">
+            <label id = "quizTitle">Question title</label>
+            <input id = "name" type = "text" name="name" placeholder="Name this game"/>
+        </div>
+        <div id = "allQuestions">
+            <div id="question-field">
+                
+                <label class="question"><i class="fas fa-question-circle"></i> Question 1</label>
+                <input class = "question-name" id = "q1" type = "text" placeholder="Name this question"/>
+
+                <form onsubmit="predict(event)">
+                    <input type="file" id="fileInput1"/>
+                    <button class="btn-predict">Predict</button>
+                </form>
+
+                <img id="uploadedImage1" src="" />
+                <input id="urlImage1" type="text" hidden/>
+
+                <div class="answer-container">
+                    <label class="A">A</label>
+                    <input id = "1a1" type = "text" placeholder="Answer 1"/>
+                    <label class="B">B</label>
+                    <input id = "1a2" type = "text" placeholder="Answer 2"/>
+                    <label class="C">C</label>
+                    <input id = "1a3"  type = "text" placeholder="Answer 3"/>
+                    <label class="D">D</label>
+                    <input id = "1a4"  type = "text" placeholder="Answer 4"/>
+                    <label class = "correct-label">Correct Answer</label>
+                    <input class = "correct" id = "correct1" type = "number" placeholder="Input number answer 1 - 4"/>
+                </div>
+            </div>
+        </div>
+        <div class="btn-container">
+            <button onclick="addQuestion()" class="btn-create">
+                <i class="fas fa-plus-circle"></i> Create a new question
+            </button>
+            
+            <div class="btn">
+                <button class="btn-save" onclick="updateDatabase()">
+                    <i class="fas fa-save"></i> Save
+                </button>
+                <button class="btn-cancel" onclick="cancelQuiz()">
+                    <i class="fas fa-ban"></i> Cancel
+                </button>
+            </div>
+        </div>
+  
+        <script src = "../../socket.io/socket.io.js"></script>
+        <script src = "../../js/quizCreator.js"></script>
+        <script src="https://kit.fontawesome.com/3cfe080d33.js" crossorigin="anonymous"></script>
+    </body>
+</html>

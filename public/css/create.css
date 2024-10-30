@@ -1,0 +1,99 @@
+body {
+    font-family: "Kanit", sans-serif;
+    background: url(../image/bg1.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+}
+#title{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    text-shadow: 2px 2px 5px #000000;
+}
+#subtitle{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+    text-shadow: 2px 2px 5px #000000;
+}
+#link{
+    color: white;
+}
+#game-list{
+    text-align: center;
+}
+#back{
+    margin: 30px 0px 0px 30px;
+    background-color: #B12F2F;
+    border: solid transparent;
+    border-radius: 4px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+    outline: none;
+    overflow: visible;
+    padding: 10px;
+    text-align: center;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    width:100px;
+}
+#back:after {
+    background-clip: padding-box;
+    background-color: #D92929;
+    border: solid transparent;
+    border-radius: 4px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+#back,
+#back:focus {
+    user-select: auto;
+}
+#back:hover:not(:disabled) {
+    filter: brightness(1.1);
+    -webkit-filter: brightness(1.1);
+}
+
+#back:disabled {
+    cursor: auto;
+}
+
+#back:active {
+    border-width: 4px 0 0;
+    background: none;
+}
+
+#gameButton{
+    font-size:80px;
+}
+#gameButton:hover{
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    #title{
+        font-size: 30px;
+    }
+    #subtitle{
+        font-size: 15px;
+    }
+}

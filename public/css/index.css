@@ -1,0 +1,179 @@
+body {
+    font-family: "Kanit", sans-serif;
+    background: url(../image/bg.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+}
+.joinGame {
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    min-height: 90vh;
+}
+.title {
+    font-size: 50px;
+    color: white;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+    margin: 10px;
+}
+.container{
+    background-color: #f5f1ee;
+    padding: 20px;
+    border-radius: 4px;
+    width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#name {
+    width: 100%;
+    padding: 10px 0px;
+    margin: 8px 0;
+    display: block;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 15px;
+    text-align: center;
+    border: 2px solid #EEEBE4;
+    transition: 0.3s;
+}
+#name:hover{
+    border: 2px solid #dedbd4;
+}
+
+#pin {
+    width: 100%;
+    padding: 10px 0px;
+    margin: 8px 0;
+    display: block;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 15px;
+    text-align: center;
+    border: 2px solid #EEEBE4;
+    transition: 0.3s;
+}
+#pin:hover {
+    border: 2px solid #dedbd4;
+}
+
+#label {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    color: #313131;
+}
+.btn-join{
+    margin-top: 20px;
+}
+#host{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+#host:hover {
+    text-decoration: underline;
+}
+#joinButton {
+    background-color: #2c2b2b;
+    border: solid transparent;
+    border-radius: 4px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 10px 16px;
+    text-align: center;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 100%;
+}
+#joinButton:after {
+    background-clip: padding-box;
+    background-color: #3a3a33;
+    border: solid transparent;
+    border-radius: 4px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+#joinButton,
+#joinButton:focus {
+    user-select: auto;
+}
+
+#joinButton:hover:not(:disabled) {
+    filter: brightness(1.1);
+    -webkit-filter: brightness(1.1);
+}
+
+#joinButton:disabled {
+    cursor: auto;
+}
+
+#joinButton:active {
+    border-width: 4px 0 0;
+    background: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #name{
+        font-size: 12px;
+    }
+    #pin{
+        font-size: 12px;
+    }
+    #joinButton {
+        background-color: #2c2b2b;
+        font-size: 12px;
+        line-height: 12px;
+    }
+    #label{
+        font-size: 15px;
+    }
+    .container{
+        margin: 0px 10px;
+        width: 300px;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 10px;
+    }
+    #host{
+        font-size: 18px;
+    }
+}
+

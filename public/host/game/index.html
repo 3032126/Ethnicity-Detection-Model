@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Game | KahootClone</title>
+        <link rel = "stylesheet" href = "../../css/hostGameView.css">
+        <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
+    </head>
+    <body>
+        <h4 id = "questionNum">Question 1 / x</h4>
+        <h4 id = "playersAnswered">Players Answered: 0 / x</h4>
+        <h3 id = "timerText">Time Left:<span id = "num"> 20</span></h3>
+        
+        
+        <div class="square-container">
+            <div class = "square" id = "square1"></div>
+            <div class = "square" id = "square2"></div>
+            <div class = "square" id = "square3"></div>
+            <div class = "square" id = "square4"></div>
+        </div>
+        
+        
+        
+        <h2 id = "question">Question</h2>
+        <img id="image" src="" alt="pic" height="250"/>
+        
+       <div class="answers-container">
+        <h3 id="answer1">Answer 1</h3>
+        <h3 id="answer2">Answer 2</h3>
+        <h3 id="answer3">Answer 3</h3>
+        <h3 id="answer4">Answer 4</h3>
+    </div>
+        
+        <br>
+        <button onclick = "nextQuestion()" id = "nextQButton">Next Question</button>
+        
+<!--        <h2 id="winnerTitle" style="display:none;">Top 3 Players</h2>
+        <div class="podium-container" style="display:block;">
+            <div class="podium second">
+                <h3 id="winner2" class="winner">2.</h3>
+            </div>
+            <div class="podium first">
+                <h3 id="winner1" class="winner">1.</h3>
+            </div>
+            <div class="podium third">
+                <h3 id="winner3" class="winner">3.</h3>
+            </div>
+        </div>-->
+
+        <section id="winnerTitle" style="display:none;">Top 3 Players
+        <div class="podium-container" style="display:block;">
+            <div class="podium second">
+                <h3 id="winner2" class="winner">2. <span class="player-name" id="player2">Player Name 2</span></h3>
+            </div>
+            <div class="podium first">
+                <h3 id="winner1" class="winner">1. <span class="player-name" id="player1">Player Name 1</span></h3>
+            </div>
+            <div class="podium third">
+                <h3 id="winner3" class="winner">3. <span class="player-name" id="player3">Player Name 3</span></h3>
+            </div>
+            <div>
+                <h3 id="winner4" class="winner" style="display:none;">4. <span class="player-name" id="player4">Player Name 4</span></h3>
+                <h3 id="winner5" class="winner" style="display:none;">5. <span class="player-name" id="player5">Player Name 5</span></h3>
+            </div>
+        </section>
+        </div>
+        
+
+
+
+
+        
+        <script src = "../../socket.io/socket.io.js"></script>
+        <script src = "../../js/libs/jqueryLibrary.js"></script>
+        <script src = "../../js/libs/deparam.js"></script>
+        <script src = "../../js/hostGame.js"></script>
+    </body>
+</html>
